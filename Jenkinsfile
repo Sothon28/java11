@@ -1,7 +1,6 @@
 pipeline{
     agent {
     	docker{
-			label "docker"
 	        image "openjdk:11-ea-jdk-slim"
     	}
     }
@@ -22,3 +21,4 @@ pipeline{
         }
     }
 }
+
