@@ -1,11 +1,9 @@
 pipeline{
     agent {
     	docker{
-	        image "openjdk:11-ea-jdk-slim"
-	        image " eclipse-temurin:11-jdk-alpine" 
 			label "docker"
+	        image "openjdk:11-ea-jdk-slim"
     	}
-
     }
 
     stages{
