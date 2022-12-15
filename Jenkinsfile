@@ -12,5 +12,11 @@ pipeline{
                 sh "mvn clean install"
             }
         }
+        stage("Build Image"){
+            steps{
+                echo "========executing Build Images========"
+               	sh "docker build -t java11 ."
+            }
+        }
     }
 }
