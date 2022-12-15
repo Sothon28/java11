@@ -1,7 +1,8 @@
 pipeline{
-    agent any
-    tools {
-        maven 'Maven 3.8.6'
+    agent {
+        image "openjdk:11-ea-jdk-slim"
+        image "eclipse-temurin:11-jdk-alpine"
+		label "docker"
     }
 
     stages{
